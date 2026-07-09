@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { IconArrowDown, IconTerminal2 } from "@tabler/icons-react";
 import { useLanguage } from "../i18n/LanguageContext";
 import type { ProfileData } from "../types";
+import { withBase } from "../lib/assets";
 import "./Hero.css";
 
 export default function Hero({ profile }: { profile: ProfileData }) {
@@ -9,6 +10,9 @@ export default function Hero({ profile }: { profile: ProfileData }) {
 
   return (
     <div className="hero">
+      {profile.photoUrl && (
+        <img className="hero-photo" src={withBase(profile.photoUrl)} alt={profile.name} />
+      )}
       <span className="eyebrow eyebrow-icon">
         <IconTerminal2 size={16} stroke={1.75} aria-hidden="true" /> {lang === "pt" ? "Portfólio" : "Portfolio"}
       </span>

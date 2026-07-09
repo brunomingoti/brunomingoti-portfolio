@@ -46,6 +46,7 @@ class Command(BaseCommand):
                 "linkedinUrl": profile.linkedin_url,
                 "githubUrl": profile.github_url,
                 "scholarUrl": profile.scholar_url,
+                "photoUrl": profile.photo.name and f"/media/{profile.photo.name}",
                 "cvPtUrl": profile.cv_pt_file.name and f"/cv/{Path(profile.cv_pt_file.name).name}",
                 "cvEnUrl": profile.cv_en_file.name and f"/cv/{Path(profile.cv_en_file.name).name}",
             }

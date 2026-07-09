@@ -14,6 +14,7 @@ export interface ProfileData {
   linkedinUrl: string;
   githubUrl: string;
   scholarUrl: string;
+  photoUrl: string;
   cvPtUrl: string;
   cvEnUrl: string;
 }

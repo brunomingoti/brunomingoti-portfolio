@@ -14,6 +14,7 @@ class Profile(models.Model):
     linkedin_url = models.URLField(blank=True)
     github_url = models.URLField(blank=True)
     scholar_url = models.URLField(blank=True)
+    photo = models.ImageField(upload_to="profile/", blank=True)
     cv_pt_file = models.FileField(upload_to="cv/", blank=True)
     cv_en_file = models.FileField(upload_to="cv/", blank=True)
 
