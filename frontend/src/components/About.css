@@ -1,0 +1,13 @@
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 760px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.about-body p:first-child {
+  color: var(--text-primary);
+}

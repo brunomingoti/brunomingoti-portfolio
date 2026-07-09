@@ -1,0 +1,77 @@
+.timeline {
+  list-style: none;
+  margin: 0 0 56px;
+  padding: 0 0 0 24px;
+  border-left: 0.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -29px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-teal);
+}
+
+.timeline-dot-alt {
+  background: var(--accent-coral);
+}
+
+.timeline-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.timeline-period {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.timeline-role {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.timeline-context {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.timeline-highlights {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.timeline-tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.education-heading {
+  margin-bottom: 32px;
+}

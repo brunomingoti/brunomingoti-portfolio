@@ -1,0 +1,32 @@
+.hero {
+  padding: 96px 0 72px;
+  border-bottom: 0.5px solid var(--border);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(29, 158, 117, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(216, 90, 48, 0.06), transparent 40%);
+}
+
+.hero-inner {
+  max-width: 760px;
+}
+
+.hero-headline {
+  margin-top: 20px;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
