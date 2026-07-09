@@ -4,8 +4,8 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-auto-rows: 1fr;
   gap: 14px;
-  align-items: start;
 }
 
 .pub-item {
@@ -15,6 +15,7 @@
   background: var(--bg-1);
   border: 0.5px solid var(--border);
   border-radius: 12px;
+  height: 100%;
 }
 
 .pub-icon {
@@ -32,6 +33,8 @@
 .pub-body {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .pub-top {
@@ -63,7 +66,8 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
   font-size: 13px;
   color: var(--accent);
 }
