@@ -1,0 +1,17 @@
+.about-body {
+  max-width: none;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  columns: 2 380px;
+  column-gap: 48px;
+}
+
+.about-body p {
+  margin: 0 0 18px;
+  break-inside: avoid-column;
+}
+
+.about-body p:first-child {
+  color: var(--text-primary);
+}

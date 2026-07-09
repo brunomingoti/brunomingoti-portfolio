@@ -1,0 +1,662 @@
+{
+  "profile": {
+    "name": "Bruno Mingoti",
+    "headline": {
+      "pt": "Engenheiro Eletricista em formação — RWTH Aachen × UFSC",
+      "en": "Electrical Engineer in training — RWTH Aachen × UFSC"
+    },
+    "bio": {
+      "pt": "Estou concluindo Engenharia Elétrica na UFSC (IAA 8,91/10,0) e me aproximo da entrada no mercado de trabalho depois de uma trajetória construída entre laboratórios de pesquisa, chão de fábrica e um intercâmbio de mais de um ano na Alemanha. Na Werkzeugmaschinenlabor WZL da RWTH Aachen, escrevi meu TCC sobre reconstrução de tomografia industrial combinando backprojection filtrada com denoising por deep learning, e desenvolvi dois pipelines acelerados por GPU comparados ao software de referência do instituto — além de sistemas backend/frontend para gestão automatizada de fluxos de dados de sensores e geração/validação de Certificados Digitais de Calibração.\n\nAntes disso, três anos como estagiário cooperado na Fundação CERTI, através do programa NEO Empresarial, em parceria com empresas como WEG, Embraco/Nidec e Landis+Gyr. Ali minha mentalidade de resolução de problemas foi moldada por projetos muito diferentes entre si: firmware STM32 para disjuntores, visão computacional para detectar defeitos em notebooks, uma aplicação supervisória que ajudou a economizar cerca de R$ 250 mil/ano na caldeiraria da WEG, e modelos de detecção de objetos em imagens aéreas marítimas para apoiar buscas e salvamentos — este último um projeto de cooperação Brasil-Suécia que também virou publicação científica.\n\nViver e trabalhar na Alemanha, colaborando com equipes de pesquisa internacionais e traduzindo problemas industriais complexos em soluções de dados, mudou a forma como penso engenharia: menos sobre aplicar uma técnica específica e mais sobre entender o problema certo antes de programar a solução. Hoje transito com naturalidade entre Python, TypeScript, visão computacional, machine learning e sistemas embarcados — sempre com o mesmo instinto: quebrar um problema difícil em partes que dá para testar, medir e melhorar.",
+      "en": "I'm finishing my Electrical Engineering degree at UFSC (GPA 8.91/10.0) and getting close to entering the job market after a path built across research labs, factory floors, and a year-plus exchange in Germany. At the Werkzeugmaschinenlabor WZL, RWTH Aachen, I wrote my thesis on industrial CT reconstruction combining filtered backprojection with deep learning-based sinogram denoising, implemented two GPU-accelerated pipelines benchmarked against the institute's reference software, and built backend/frontend systems for automated sensor data-stream management and for generating/validating Digital Calibration Certificates.\n\nBefore that, three years as a co-op student at CERTI Foundation, through the NEO Empresarial program, partnering with companies such as WEG, Embraco/Nidec, and Landis+Gyr. That's where my problem-solving mindset was shaped by genuinely varied projects: STM32 firmware for circuit breakers, computer vision to detect laptop defects, a supervisory application that helped save an estimated €40k/year in WEG's boiler area, and object detection models over aerial maritime imagery to support search-and-rescue missions — the latter a Brazil-Sweden cooperation that also became a peer-reviewed publication.\n\nLiving and working in Germany, collaborating with international research teams and translating complex industrial problems into data-driven solutions, changed how I think about engineering: less about applying one specific technique, more about understanding the right problem before writing the solution. Today I move comfortably between Python, TypeScript, computer vision, machine learning, and embedded systems — always with the same instinct: break a hard problem into pieces you can test, measure, and improve."
+    },
+    "email": "brunomingoti@gmail.com",
+    "phone": "+55 48 988336767",
+    "linkedinUrl": "https://www.linkedin.com/in/brunomingoti/",
+    "githubUrl": "",
+    "scholarUrl": "https://scholar.google.com.br/citations?user=Dx-d55AAAAAJ&hl=pt-BR",
+    "photoUrl": "/media/profile/bruno-mingoti.jpeg",
+    "cvPtUrl": "/cv/CV_Bruno_Mingoti_portugues.pdf",
+    "cvEnUrl": "/cv/CV_Bruno_Mingoti_english.pdf"
+  },
+  "institutions": [
+    {
+      "slug": "wzl",
+      "name": "WZL — RWTH Aachen"
+    },
+    {
+      "slug": "certi",
+      "name": "Fundação CERTI"
+    },
+    {
+      "slug": "ufsc",
+      "name": "UFSC"
+    },
+    {
+      "slug": "invest-jr",
+      "name": "Invest Jr."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "ct-sinogram-denoising",
+      "title": {
+        "pt": "Reconstrução de CT industrial com denoising por deep learning",
+        "en": "Industrial CT reconstruction with deep learning denoising"
+      },
+      "summary": {
+        "pt": "TCC: backprojection filtrada + denoising de sinogramas por deep learning, com pipelines aceleradas por GPU.",
+        "en": "Bachelor's thesis: filtered backprojection + deep learning sinogram denoising, with GPU-accelerated pipelines."
+      },
+      "body": {
+        "pt": "Trabalho de Conclusão de Curso desenvolvido na Werkzeugmaschinenlabor WZL da RWTH Aachen, propondo combinar a reconstrução clássica por backprojection filtrada com um estágio de denoising de sinogramas baseado em deep learning, visando melhorar a qualidade de reconstrução de tomografia computadorizada industrial sem custo proibitivo de tempo.\n\nImplementei duas pipelines de reconstrução aceleradas por GPU e as comparei, em benchmark sistemático de qualidade e desempenho, contra o software de referência utilizado no instituto — obtendo ganhos tanto em fidelidade da imagem reconstruída quanto em tempo de processamento.",
+        "en": "Bachelor's thesis developed at the Werkzeugmaschinenlabor WZL, RWTH Aachen, proposing to combine classical filtered backprojection reconstruction with a deep learning-based sinogram denoising stage, aiming to improve industrial CT reconstruction quality without a prohibitive time cost.\n\nI implemented two GPU-accelerated reconstruction pipelines and benchmarked them systematically for quality and performance against the institute's reference software — achieving gains in both reconstructed image fidelity and processing time."
+      },
+      "institution": "wzl",
+      "role": {
+        "pt": "Assistente de Pesquisa (Hilfswissenschaftler)",
+        "en": "Student Assistant (Hilfswissenschaftler)"
+      },
+      "periodStart": "2024-08",
+      "periodEnd": "2025-12",
+      "tools": [
+        "Python",
+        "PyTorch",
+        "GPU computing",
+        "CT reconstruction",
+        "deep learning"
+      ],
+      "icon": "ti-scan",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": true,
+      "images": []
+    },
+    {
+      "slug": "automated-data-stream-stack",
+      "title": {
+        "pt": "Automated Data Stream Management Software-Stack",
+        "en": "Automated Data Stream Management Software-Stack"
+      },
+      "summary": {
+        "pt": "Serviços backend/frontend para matching automatizado de dispositivos, produtores e consumidores de dados.",
+        "en": "Backend/frontend services for automated device/producer/consumer data matching."
+      },
+      "body": {
+        "pt": "Software-stack desenvolvido no âmbito do projeto de pesquisa AMalytik (financiado pelo Ministério Federal alemão de Assuntos Econômicos e Ação Climática), atuando como camada intermediária dentro de um ecossistema SOIL, conectando dispositivos sensores (fontes de dados) a aplicações consumidoras.\n\nDesenvolvi tanto os serviços de backend quanto o frontend para o gerenciamento automatizado desses fluxos de dados, incluindo o matching entre dispositivos, produtores e consumidores. Código em Python e TypeScript, publicado com licença MIT e arquivado no Zenodo.",
+        "en": "Software stack built as part of the AMalytik research project (funded by the German Federal Ministry for Economic Affairs and Climate Action), acting as an intermediary layer within a SOIL ecosystem, connecting sensor devices (data sources) to consumer applications.\n\nI built both the backend services and the frontend for automated management of these data flows, including device/producer/consumer matching. Code in Python and TypeScript, released under the MIT license and archived on Zenodo."
+      },
+      "institution": "wzl",
+      "role": {
+        "pt": "Assistente de Pesquisa (Hilfswissenschaftler)",
+        "en": "Student Assistant (Hilfswissenschaftler)"
+      },
+      "periodStart": "2024-08",
+      "periodEnd": "2025-12",
+      "tools": [
+        "Python",
+        "TypeScript",
+        "REST APIs"
+      ],
+      "icon": "ti-topology-star-3",
+      "coverImage": "",
+      "repoUrl": "https://zenodo.org/records/18255616",
+      "demoUrl": "",
+      "featured": true,
+      "images": []
+    },
+    {
+      "slug": "dcc-generator-validator",
+      "title": {
+        "pt": "DCC Generator and Validator Webpage",
+        "en": "DCC Generator and Validator Webpage"
+      },
+      "summary": {
+        "pt": "Geração e validação de Certificados Digitais de Calibração (DCC) em XML, com API REST e webapp.",
+        "en": "Generation and validation of Digital Calibration Certificates (DCC) XML, with a REST API and web app."
+      },
+      "body": {
+        "pt": "Ferramenta que converte dados de calibração em arquivos XML de Certificado Digital de Calibração (DCC) compatíveis com o schema da PTB (Physikalisch-Technische Bundesanstalt), com gestão de conteúdo tanto via API REST quanto interface web.\n\nImplementei as operações de banco de dados para armazenamento e assinatura digital dos conjuntos de medição, também no contexto do projeto AMalytik. Código em TypeScript e Python, licença MIT, arquivado no Zenodo.",
+        "en": "A tool that converts calibration data into standards-compliant Digital Calibration Certificate (DCC) XML files following the PTB (Physikalisch-Technische Bundesanstalt) schema, with content management through both a REST API and a web interface.\n\nI implemented the database operations for storing and digitally signing measurement datasets, also as part of the AMalytik project. Code in TypeScript and Python, MIT license, archived on Zenodo."
+      },
+      "institution": "wzl",
+      "role": {
+        "pt": "Assistente de Pesquisa (Hilfswissenschaftler)",
+        "en": "Student Assistant (Hilfswissenschaftler)"
+      },
+      "periodStart": "2024-08",
+      "periodEnd": "2025-12",
+      "tools": [
+        "TypeScript",
+        "Python",
+        "digital signatures",
+        "REST APIs"
+      ],
+      "icon": "ti-certificate",
+      "coverImage": "",
+      "repoUrl": "https://zenodo.org/records/18241584",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    },
+    {
+      "slug": "maritime-search-rescue-detection",
+      "title": {
+        "pt": "Detecção de objetos em imagens aéreas marítimas para busca e salvamento",
+        "en": "Object detection in aerial maritime images for search and rescue"
+      },
+      "summary": {
+        "pt": "Modelos de detecção e rastreamento para identificar destroços, embarcações e pessoas desaparecidas.",
+        "en": "Detection and tracking models to identify wrecks, vessels, and missing people at sea."
+      },
+      "body": {
+        "pt": "Projeto de cooperação Brasil-Suécia na área aeronáutica, com a Fundação CERTI, para usar IA em missões de busca e salvamento. Desenvolvi modelos de detecção e rastreamento de objetos em imagens aéreas marítimas, focados em identificar destroços, embarcações e pessoas desaparecidas.\n\nO trabalho deu origem à publicação 'Small Object Detection in Drone-Captured Images for Maritime Surveillance', aceita no SIBGRAPI 2025.",
+        "en": "A Brazil-Sweden cooperation project in Aeronautics, with CERTI Foundation, using AI to support search-and-rescue missions. I developed object detection and tracking models over aerial maritime imagery, focused on identifying wrecks, vessels, and missing people.\n\nThe work led to the publication 'Small Object Detection in Drone-Captured Images for Maritime Surveillance', accepted at SIBGRAPI 2025."
+      },
+      "institution": "certi",
+      "role": {
+        "pt": "Estagiário cooperado — Programa NEO Empresarial",
+        "en": "Co-op student — NEO Empresarial program"
+      },
+      "periodStart": "2022-03",
+      "periodEnd": "2024-07",
+      "tools": [
+        "Python",
+        "computer vision",
+        "object detection",
+        "object tracking"
+      ],
+      "icon": "ti-drone",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": true,
+      "images": []
+    },
+    {
+      "slug": "weg-boiler-supervisory-app",
+      "title": {
+        "pt": "Aplicação supervisória para alívio de tensões térmicas (WEG)",
+        "en": "Supervisory application for thermal stress relief (WEG)"
+      },
+      "summary": {
+        "pt": "App Electron + Modbus para a caldeiraria da WEG, com economia estimada de R$ 250 mil/ano.",
+        "en": "Electron + Modbus app for WEG's boiler area, with an estimated €40k/year in savings."
+      },
+      "body": {
+        "pt": "Desenvolvimento de uma aplicação supervisória em Electron, comunicando via protocolo Modbus, para apoiar o processo de alívio de tensões térmicas na área de caldeiraria da WEG S.A. A solução foi levada à produção, com economia estimada de R$ 250 mil por ano.",
+        "en": "Built an Electron supervisory application communicating over Modbus to support the thermal stress-relief process in WEG's boiler area. The solution went into production, with an estimated €40k/year in savings."
+      },
+      "institution": "certi",
+      "role": {
+        "pt": "Estagiário cooperado — Programa NEO Empresarial",
+        "en": "Co-op student — NEO Empresarial program"
+      },
+      "periodStart": "2022-03",
+      "periodEnd": "2024-07",
+      "tools": [
+        "Electron",
+        "Modbus",
+        "industrial automation"
+      ],
+      "icon": "ti-flame",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": true,
+      "images": []
+    },
+    {
+      "slug": "stm32-breaker-firmware",
+      "title": {
+        "pt": "Firmware STM32 para disjuntores de caixa moldada (WEG)",
+        "en": "STM32 firmware for molded-case circuit breakers (WEG)"
+      },
+      "summary": {
+        "pt": "Firmware em C para cálculos de disjuntores e comunicação I2C/SPI.",
+        "en": "C firmware for breaker tripping-curve calculations and I2C/SPI communication."
+      },
+      "body": {
+        "pt": "Desenvolvimento de firmware embarcado em C (STM32CubeIDE) para cálculos de disjuntores de caixa moldada — incluindo curva de disparo — e comunicação via protocolos I2C/SPI, em parceria com a WEG S.A.",
+        "en": "Embedded firmware development in C (STM32CubeIDE) for molded-case circuit breaker calculations — including the tripping curve — and I2C/SPI communication, in partnership with WEG S.A."
+      },
+      "institution": "certi",
+      "role": {
+        "pt": "Estagiário cooperado — Programa NEO Empresarial",
+        "en": "Co-op student — NEO Empresarial program"
+      },
+      "periodStart": "2022-03",
+      "periodEnd": "2024-07",
+      "tools": [
+        "C",
+        "STM32CubeIDE",
+        "I2C",
+        "SPI",
+        "embedded systems"
+      ],
+      "icon": "ti-cpu",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    },
+    {
+      "slug": "lenovo-defect-detection",
+      "title": {
+        "pt": "Detecção de defeitos em notebooks com YOLO (Lenovo)",
+        "en": "Laptop defect detection with YOLO (Lenovo)"
+      },
+      "summary": {
+        "pt": "Sistema de visão computacional para identificar defeitos físicos em notebooks.",
+        "en": "Computer vision system to identify physical laptop defects."
+      },
+      "body": {
+        "pt": "Sistema de detecção de falhas usando YOLO para identificar defeitos físicos (manchas, amassados) em notebooks, desenvolvido para a Lenovo em projeto na Fundação CERTI.",
+        "en": "Failure-detection system using YOLO to identify physical defects (stains, dents) in laptops, developed for Lenovo through a CERTI Foundation project."
+      },
+      "institution": "certi",
+      "role": {
+        "pt": "Estagiário cooperado — Programa NEO Empresarial",
+        "en": "Co-op student — NEO Empresarial program"
+      },
+      "periodStart": "2022-03",
+      "periodEnd": "2024-07",
+      "tools": [
+        "Python",
+        "YOLO",
+        "computer vision"
+      ],
+      "icon": "ti-device-laptop",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    },
+    {
+      "slug": "vibration-spectrum-automation",
+      "title": {
+        "pt": "Automação de relatórios de espectro de vibração (WEG)",
+        "en": "Vibration-spectrum reporting automation (WEG)"
+      },
+      "summary": {
+        "pt": "Automação implantada em produção para o WEG Motion Fleet Management.",
+        "en": "Automation deployed to production for WEG Motion Fleet Management."
+      },
+      "body": {
+        "pt": "Automação da análise e geração de relatórios de espectro de vibração para o WEG Motion Fleet Management, padronizando dados de sensores em insights para tomada de decisão de engenharia. Solução implantada em produção durante estágio de verão na WEG.",
+        "en": "Automated vibration-spectrum analysis and reporting for WEG Motion Fleet Management, transforming sensor data into standardized insights for engineering decision-making. Deployed into production during a summer internship at WEG."
+      },
+      "institution": "certi",
+      "role": {
+        "pt": "Estagiário cooperado — Programa NEO Empresarial",
+        "en": "Co-op student — NEO Empresarial program"
+      },
+      "periodStart": "2022-03",
+      "periodEnd": "2024-07",
+      "tools": [
+        "Python",
+        "data pipelines",
+        "reporting"
+      ],
+      "icon": "ti-chart-dots",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    },
+    {
+      "slug": "leukemia-cell-classification",
+      "title": {
+        "pt": "Classificação de células de leucemia linfoblástica aguda",
+        "en": "Acute lymphoblastic leukemia cell classification"
+      },
+      "summary": {
+        "pt": "Ensemble InceptionV3 com weighted F1-score de 93,88%.",
+        "en": "InceptionV3 ensemble with 93.88% weighted F1-score."
+      },
+      "body": {
+        "pt": "Projeto acadêmico da UFSC de classificação de células de leucemia linfoblástica aguda a partir de imagens, usando um ensemble de modelos InceptionV3. O modelo final atingiu weighted F1-score de 93,88% no conjunto de teste.",
+        "en": "UFSC academic project classifying acute lymphoblastic leukemia cells from images, using an InceptionV3 model ensemble. The final model reached a 93.88% weighted F1-score on the test set."
+      },
+      "institution": "ufsc",
+      "role": {
+        "pt": "Projeto acadêmico",
+        "en": "Academic project"
+      },
+      "periodStart": "2023",
+      "periodEnd": "2024",
+      "tools": [
+        "Python",
+        "TensorFlow",
+        "InceptionV3",
+        "ensemble learning"
+      ],
+      "icon": "ti-microscope",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": true,
+      "images": []
+    },
+    {
+      "slug": "he-tissue-segmentation",
+      "title": {
+        "pt": "Segmentação e estimativa de células em tecidos H&E",
+        "en": "H&E tissue cell segmentation and estimation"
+      },
+      "summary": {
+        "pt": "Segmentação de imagens histológicas com OpenCV e scikit-image.",
+        "en": "Histology image segmentation with OpenCV and scikit-image."
+      },
+      "body": {
+        "pt": "Projeto acadêmico de processamento de imagens da UFSC voltado à segmentação e estimativa de contagem de células em tecidos corados com Hematoxilina e Eosina (H&E), usando OpenCV e scikit-image.",
+        "en": "UFSC academic image-processing project focused on segmenting and estimating cell counts in Hematoxylin and Eosin (H&E) stained tissue, using OpenCV and scikit-image."
+      },
+      "institution": "ufsc",
+      "role": {
+        "pt": "Projeto acadêmico",
+        "en": "Academic project"
+      },
+      "periodStart": "2023",
+      "periodEnd": "2024",
+      "tools": [
+        "Python",
+        "OpenCV",
+        "scikit-image"
+      ],
+      "icon": "ti-microscope",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    },
+    {
+      "slug": "lithium-battery-model",
+      "title": {
+        "pt": "Levantamento de modelo simplificado de baterias de lítio",
+        "en": "Simplified lithium-ion battery model identification"
+      },
+      "summary": {
+        "pt": "Identificação de parâmetros de bateria de lítio em laboratório, publicado no CBMAG 2024.",
+        "en": "Lab-based lithium battery parameter identification, published at CBMAG 2024."
+      },
+      "body": {
+        "pt": "Projeto acadêmico da UFSC de identificação de parâmetros de um modelo simplificado de baterias de lítio a partir de ensaios de laboratório, com os resultados publicados como 'Levantamento de um Modelo Simplificado de Baterias de Lítio em Laboratório' no CBMAG 2024.",
+        "en": "UFSC academic project identifying the parameters of a simplified lithium-ion battery model from lab experiments, with results published as 'Experimental Identification of a Simplified Lithium-Ion Battery Model' at CBMAG 2024."
+      },
+      "institution": "ufsc",
+      "role": {
+        "pt": "Projeto acadêmico",
+        "en": "Academic project"
+      },
+      "periodStart": "2023",
+      "periodEnd": "2024",
+      "tools": [
+        "Python",
+        "system identification",
+        "laboratory testing"
+      ],
+      "icon": "ti-battery-2",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    },
+    {
+      "slug": "invest-jr-financial-tooling",
+      "title": {
+        "pt": "Automação de planilhas e dashboards financeiros",
+        "en": "Financial spreadsheet and dashboard automation"
+      },
+      "summary": {
+        "pt": "Ferramentas de análise financeira e gestão empresarial para clientes da Invest Jr.",
+        "en": "Financial analysis and business-management tooling for Invest Jr. clients."
+      },
+      "body": {
+        "pt": "Como membro da Invest Jr., produzi conteúdos didáticos sobre Excel, Power Query e VBA, conduzi workshops de investimentos e finanças pessoais, e desenvolvi planilhas automatizadas, dashboards e ferramentas de relatórios para otimizar o acompanhamento financeiro e a tomada de decisão dos clientes.",
+        "en": "As a member of Invest Jr., I produced instructional content on Excel, Power Query, and VBA, led workshops on investments and personal finance, and developed automated spreadsheet systems, dashboards, and reporting tools to optimize financial tracking and decision-making for clients."
+      },
+      "institution": "invest-jr",
+      "role": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "periodStart": "2020-09",
+      "periodEnd": "2021-06",
+      "tools": [
+        "Excel",
+        "Power Query",
+        "VBA"
+      ],
+      "icon": "ti-file-spreadsheet",
+      "coverImage": "",
+      "repoUrl": "",
+      "demoUrl": "",
+      "featured": false,
+      "images": []
+    }
+  ],
+  "publications": [
+    {
+      "title": "Small Object Detection in Drone-Captured Images for Maritime Surveillance",
+      "authors": "Bruno Mingoti, et al.",
+      "venue": "SIBGRAPI",
+      "year": 2025,
+      "type": "paper",
+      "url": "https://scholar.google.com.br/citations?user=Dx-d55AAAAAJ&hl=pt-BR",
+      "summary": {
+        "pt": "Modelos de detecção de pequenos objetos em imagens de drone para vigilância marítima e apoio a buscas e salvamentos.",
+        "en": "Small object detection models over drone imagery for maritime surveillance and search-and-rescue support."
+      }
+    },
+    {
+      "title": "Filtered backprojection combined with deep learning-based sinogram denoising for improved industrial CT reconstruction",
+      "authors": "Bruno Mingoti",
+      "venue": "UFSC / RWTH Aachen — Trabalho de Conclusão de Curso",
+      "year": 2025,
+      "type": "thesis",
+      "url": "https://scholar.google.com.br/citations?user=Dx-d55AAAAAJ&hl=pt-BR",
+      "summary": {
+        "pt": "TCC sobre reconstrução de CT industrial combinando backprojection filtrada com denoising por deep learning.",
+        "en": "Bachelor's thesis on industrial CT reconstruction combining filtered backprojection with deep learning-based denoising."
+      }
+    },
+    {
+      "title": "Levantamento de um Modelo Simplificado de Baterias de Lítio em Laboratório",
+      "authors": "Bruno Mingoti, et al.",
+      "venue": "CBMAG",
+      "year": 2024,
+      "type": "paper",
+      "url": "https://scholar.google.com.br/citations?user=Dx-d55AAAAAJ&hl=pt-BR",
+      "summary": {
+        "pt": "Identificação experimental de parâmetros de um modelo simplificado de baterias de lítio.",
+        "en": "Experimental identification of the parameters of a simplified lithium-ion battery model."
+      }
+    },
+    {
+      "title": "Automated Data Stream Management Software-Stack",
+      "authors": "Matthias Bodenbenner, Bruno Mingoti, Kilian Leonard Geiger, Robert Schmitt",
+      "venue": "Zenodo (código aberto, projeto AMalytik)",
+      "year": 2026,
+      "type": "report",
+      "url": "https://zenodo.org/records/18255616",
+      "summary": {
+        "pt": "Software-stack para gerenciamento automatizado de fluxos de dados de sensores, com matching de dispositivos, produtores e consumidores.",
+        "en": "Software stack for automated sensor data-stream management, with device/producer/consumer matching."
+      }
+    },
+    {
+      "title": "DCC Generator and Validator Webpage",
+      "authors": "Bruno Mingoti, Matthias Bodenbenner, Kilian Leonard Geiger, Robert Schmitt (supervisor)",
+      "venue": "Zenodo (código aberto, projeto AMalytik)",
+      "year": 2026,
+      "type": "report",
+      "url": "https://zenodo.org/records/18241584",
+      "summary": {
+        "pt": "Geração e validação de Certificados Digitais de Calibração (DCC) em XML, conforme schema da PTB.",
+        "en": "Generation and validation of Digital Calibration Certificate (DCC) XML files, following the PTB schema."
+      }
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Werkzeugmaschinenlabor WZL der RWTH Aachen",
+      "location": "Aachen, Alemanha / Germany",
+      "role": {
+        "pt": "Assistente de Pesquisa (Hilfswissenschaftler — HiWi)",
+        "en": "Student Assistant (Hilfswissenschaftler — HiWi)"
+      },
+      "periodStart": "2024-08",
+      "periodEnd": "2025-12",
+      "context": {
+        "pt": "Instituto líder em pesquisa de máquinas-ferramenta e engenharia de produção.",
+        "en": "Leading research institute on machine tools and production engineering."
+      },
+      "highlights": {
+        "pt": [
+          "TCC sobre backprojection filtrada com denoising de sinogramas por deep learning para reconstrução de CT industrial; duas pipelines aceleradas por GPU, com benchmark contra o software do instituto.",
+          "Serviços backend e frontend para gerenciamento automatizado de fluxos de dados (matching de dispositivos/produtores/consumidores).",
+          "Operações de banco de dados para armazenamento e assinatura digital de conjuntos de medição para Certificados Digitais de Calibração (DCC).",
+          "Suporte a projetos de metrologia industrial: medições ópticas, análises e relatórios.",
+          "Apoio na organização do 3DMC, principal evento europeu de metrologia."
+        ],
+        "en": [
+          "Bachelor's thesis on filtered backprojection combined with deep learning-based sinogram denoising for industrial CT reconstruction; two GPU-accelerated pipelines benchmarked against the institute's software.",
+          "Backend and frontend services for automated data-stream management (device/producer/consumer matching).",
+          "Database operations for storing and digitally signing measurement datasets for Digital Calibration Certificates (DCC).",
+          "Support for industrial metrology projects: optical measurements, analysis, and reporting.",
+          "Assistance hosting the 3DMC, Europe's leading metrology event."
+        ]
+      },
+      "tools": [
+        "Python",
+        "TypeScript",
+        "PyTorch",
+        "GPU computing",
+        "REST APIs",
+        "digital signatures"
+      ],
+      "recommendationLetterUrl": ""
+    },
+    {
+      "organization": "Fundação CERTI",
+      "location": "Florianópolis, Brasil / Brazil",
+      "role": {
+        "pt": "Estagiário cooperado — Programa NEO Empresarial",
+        "en": "Co-op student — NEO Empresarial program"
+      },
+      "periodStart": "2022-03",
+      "periodEnd": "2024-07",
+      "context": {
+        "pt": "Programa de formação técnica em parceria com WEG S.A., Embraco/Nidec e Landis+Gyr AG.",
+        "en": "Technical training program in partnership with WEG S.A., Embraco/Nidec, and Landis+Gyr AG."
+      },
+      "highlights": {
+        "pt": [
+          "Pesquisa em métodos de IA para few-shot learning.",
+          "Firmware STM32 (C) para cálculos de disjuntores de caixa moldada e comunicação I2C/SPI para a WEG.",
+          "Sistema de detecção de falhas em notebooks com YOLO para a Lenovo.",
+          "Aplicação supervisória Electron + Modbus para alívio de tensões térmicas na caldeiraria da WEG (~R$ 250 mil/ano de economia).",
+          "Automação de relatórios de espectro de vibração implantada em produção.",
+          "Modelos de detecção e rastreamento de objetos em imagens aéreas marítimas para busca e salvamento (cooperação Brasil-Suécia).",
+          "Instrutor no programa interno de treinamento em ciência de dados para novos membros."
+        ],
+        "en": [
+          "Research on few-shot learning AI methods.",
+          "STM32 (C) firmware for molded-case circuit breaker calculations and I2C/SPI communication for WEG.",
+          "YOLO-based laptop defect detection system for Lenovo.",
+          "Electron + Modbus supervisory application for thermal stress relief in WEG's boiler area (~€40k/year savings).",
+          "Vibration-spectrum reporting automation deployed to production.",
+          "Object detection and tracking models over aerial maritime imagery for search and rescue (Brazil-Sweden cooperation).",
+          "Instructor in the team's internal data science training program for new members."
+        ]
+      },
+      "tools": [
+        "Python",
+        "C",
+        "STM32CubeIDE",
+        "YOLO",
+        "Electron",
+        "Modbus"
+      ],
+      "recommendationLetterUrl": ""
+    },
+    {
+      "organization": "Invest Jr.",
+      "location": "Florianópolis, Brasil / Brazil (remoto/remote)",
+      "role": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "periodStart": "2020-09",
+      "periodEnd": "2021-06",
+      "context": {
+        "pt": "Organização sem fins lucrativos gerida por estudantes.",
+        "en": "Nonprofit organization managed by students."
+      },
+      "highlights": {
+        "pt": [
+          "Planejamento e execução de treinamentos técnicos e soluções digitais para análise financeira e gestão empresarial.",
+          "Produção de conteúdos didáticos sobre Excel, Power Query e VBA; condução de workshops de investimentos e finanças pessoais.",
+          "Desenvolvimento de planilhas automatizadas, dashboards e ferramentas de relatórios."
+        ],
+        "en": [
+          "Planned and delivered technical training and digital solutions for financial analysis and business management.",
+          "Produced instructional content on Excel, Power Query, and VBA; led workshops on investments and personal finance.",
+          "Developed automated spreadsheet systems, dashboards, and reporting tools."
+        ]
+      },
+      "tools": [
+        "Excel",
+        "Power Query",
+        "VBA"
+      ],
+      "recommendationLetterUrl": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "RWTH Aachen University",
+      "location": "Aachen, Alemanha / Germany",
+      "degree": {
+        "pt": "B.Sc. Engenharia Mecânica — Intercâmbio",
+        "en": "B.Sc. Mechanical Engineering — Exchange student"
+      },
+      "periodStart": "2024-08",
+      "periodEnd": "2025-12",
+      "details": {
+        "pt": [
+          "Assistente de Pesquisa / Hilfswissenschaftler na Werkzeugmaschinenlabor WZL."
+        ],
+        "en": [
+          "Student Assistant / Hilfswissenschaftler at Werkzeugmaschinenlabor WZL."
+        ]
+      }
+    },
+    {
+      "institution": "Universidade Federal de Santa Catarina (UFSC)",
+      "location": "Florianópolis, Brasil / Brazil",
+      "degree": {
+        "pt": "B.Sc. Engenharia Elétrica (IAA 8,91/10,0)",
+        "en": "B.Sc. Electrical Engineering (GPA 8.91/10.0)"
+      },
+      "periodStart": "2020-08",
+      "periodEnd": "2027-07",
+      "details": {
+        "pt": [
+          "Disciplinas relevantes: machine learning, estatística, cálculo avançado, processamento de imagens e álgebra linear.",
+          "Projetos: identificação de parâmetros de bateria de lítio; classificação de células de leucemia linfoblástica aguda; segmentação e estimativa de células em tecidos H&E."
+        ],
+        "en": [
+          "Relevant courses: machine learning, statistics, advanced calculus, image processing, and linear algebra.",
+          "Projects: lithium battery parameter identification; acute lymphoblastic leukemia cell classification; H&E tissue cell segmentation and estimation."
+        ]
+      }
+    }
+  ]
+}
