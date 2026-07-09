@@ -540,7 +540,8 @@
         "GPU computing",
         "REST APIs",
         "digital signatures"
-      ]
+      ],
+      "recommendationLetterUrl": ""
     },
     {
       "organization": "Fundação CERTI",
@@ -582,7 +583,8 @@
         "YOLO",
         "Electron",
         "Modbus"
-      ]
+      ],
+      "recommendationLetterUrl": ""
     },
     {
       "organization": "Invest Jr.",
@@ -613,7 +615,8 @@
         "Excel",
         "Power Query",
         "VBA"
-      ]
+      ],
+      "recommendationLetterUrl": ""
     }
   ],
   "education": [

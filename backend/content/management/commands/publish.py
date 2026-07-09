@@ -26,13 +26,12 @@ class Command(BaseCommand):
             for f in cv_src.iterdir():
                 shutil.copy2(f, cv_dst / f.name)
 
-        for sub in ["projects", "profile"]:
+        for sub in ["projects", "profile", "recommendations"]:
             src = media_root / sub
-            if not src.exists():
-                continue
             dst = FRONTEND_DIR / "public" / "media" / sub
             if dst.exists():
                 shutil.rmtree(dst)
-            shutil.copytree(src, dst)
+            if src.exists():
+                shutil.copytree(src, dst)
 
         self.stdout.write(self.style.SUCCESS("Frontend content and media are up to date."))

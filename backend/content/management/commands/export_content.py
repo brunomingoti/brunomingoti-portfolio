@@ -107,6 +107,8 @@ class Command(BaseCommand):
                 "context": bilingual(e, "context"),
                 "highlights": {"pt": e.highlights_pt, "en": e.highlights_en},
                 "tools": tool_list(e.tools),
+                "recommendationLetterUrl": e.recommendation_letter.name
+                and f"/media/{e.recommendation_letter.name}",
             }
             for e in ExperienceEntry.objects.all()
         ]

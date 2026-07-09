@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { IconFileCertificate } from "@tabler/icons-react";
 import BackHome from "./BackHome";
+import LetterModal from "./LetterModal";
 import { useLanguage } from "../i18n/LanguageContext";
 import type { EducationData, ExperienceData } from "../types";
 import "./ExperienceTimeline.css";
@@ -11,6 +14,7 @@ export default function ExperienceTimeline({
   education: EducationData[];
 }) {
   const { t, ui, lang } = useLanguage();
+  const [openLetter, setOpenLetter] = useState<{ url: string; title: string } | null>(null);
 
   return (
     <div className="page">
@@ -55,6 +59,17 @@ export default function ExperienceTimeline({
                         ))}
                       </div>
                     )}
+                    {exp.recommendationLetterUrl && (
+                      <button
+                        className="letter-trigger"
+                        onClick={() =>
+                          setOpenLetter({ url: exp.recommendationLetterUrl, title: exp.organization })
+                        }
+                      >
+                        <IconFileCertificate size={15} stroke={1.75} aria-hidden="true" />
+                        {lang === "pt" ? "Carta de recomendação" : "Recommendation letter"}
+                      </button>
+                    )}
                   </div>
                 </li>
               ))}
@@ -89,6 +104,14 @@ export default function ExperienceTimeline({
           </div>
         </div>
       </div>
+
+      {openLetter && (
+        <LetterModal
+          url={openLetter.url}
+          title={openLetter.title}
+          onClose={() => setOpenLetter(null)}
+        />
+      )}
     </div>
   );
 }

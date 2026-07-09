@@ -123,6 +123,11 @@ class ExperienceEntry(models.Model):
     highlights_pt = models.JSONField(default=list, help_text="List of bullet strings")
     highlights_en = models.JSONField(default=list)
     tools = models.CharField(max_length=300, blank=True)
+    recommendation_letter = models.FileField(
+        upload_to="recommendations/",
+        blank=True,
+        help_text="PDF or image of the recommendation letter for this role, shown as an inline preview.",
+    )
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
