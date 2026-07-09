@@ -7,11 +7,11 @@ export default function About({ profile }: { profile: ProfileData }) {
   const paragraphs = t(profile.bio).split("\n\n");
 
   return (
-    <section id="about" className="section">
+    <div className="page">
       <div className="container">
         <div className="section-head">
           <div>
-            <span className="eyebrow">01 · {ui.nav.about}</span>
+            <span className="eyebrow">{ui.nav.about}</span>
             <h2>{ui.nav.about}</h2>
           </div>
         </div>
@@ -21,6 +21,6 @@ export default function About({ profile }: { profile: ProfileData }) {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

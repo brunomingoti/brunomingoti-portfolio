@@ -22,11 +22,11 @@ export default function Contact({ profile }: { profile: ProfileData }) {
   ].filter(Boolean) as { href: string; label: string; icon: TablerIcon }[];
 
   return (
-    <section id="contact" className="section contact-section">
+    <div className="page">
       <div className="container">
         <div className="section-head">
           <div>
-            <span className="eyebrow">05 · {ui.nav.contact}</span>
+            <span className="eyebrow">{ui.nav.contact}</span>
             <h2>{ui.nav.contact}</h2>
           </div>
         </div>
@@ -53,6 +53,6 @@ export default function Contact({ profile }: { profile: ProfileData }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

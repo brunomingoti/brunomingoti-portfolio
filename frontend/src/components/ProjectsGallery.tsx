@@ -26,11 +26,11 @@ export default function ProjectsGallery({
   }, [projects, filter]);
 
   return (
-    <section id="projects" className="section">
+    <div className="page">
       <div className="container">
         <div className="section-head">
           <div>
-            <span className="eyebrow">02 · {ui.nav.projects}</span>
+            <span className="eyebrow">{ui.nav.projects}</span>
             <h2>{ui.nav.projects}</h2>
           </div>
           <div className="filter-row">
@@ -67,6 +67,6 @@ export default function ProjectsGallery({
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

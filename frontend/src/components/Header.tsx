@@ -1,19 +1,17 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IconLanguage } from "@tabler/icons-react";
 import { useLanguage } from "../i18n/LanguageContext";
 import "./Header.css";
 
 export default function Header() {
   const { ui, lang, toggleLang } = useLanguage();
-  const location = useLocation();
-  const isHome = location.pathname === "/" || location.pathname === "";
 
   const links = [
-    { to: "/#about", label: ui.nav.about },
-    { to: "/#projects", label: ui.nav.projects },
-    { to: "/#publications", label: ui.nav.publications },
-    { to: "/#experience", label: ui.nav.experience },
-    { to: "/#contact", label: ui.nav.contact },
+    { to: "/sobre", label: ui.nav.about },
+    { to: "/projetos", label: ui.nav.projects },
+    { to: "/publicacoes", label: ui.nav.publications },
+    { to: "/experiencia", label: ui.nav.experience },
+    { to: "/contato", label: ui.nav.contact },
   ];
 
   return (
@@ -23,15 +21,13 @@ export default function Header() {
           <span className="brand-mark">BM</span>
           <span className="brand-name">Bruno Mingoti</span>
         </Link>
-        {isHome && (
-          <nav className="site-nav">
-            {links.map((l) => (
-              <a key={l.to} href={`#${l.to.split("#")[1]}`}>
-                {l.label}
-              </a>
-            ))}
-          </nav>
-        )}
+        <nav className="site-nav">
+          {links.map((l) => (
+            <NavLink key={l.to} to={l.to} className={({ isActive }) => (isActive ? "active" : "")}>
+              {l.label}
+            </NavLink>
+          ))}
+        </nav>
         <button className="lang-toggle" onClick={toggleLang} aria-label="Toggle language">
           <IconLanguage size={16} stroke={1.75} aria-hidden="true" />
           {lang === "pt" ? "PT" : "EN"}

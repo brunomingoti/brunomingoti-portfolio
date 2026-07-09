@@ -50,6 +50,10 @@
   color: var(--text-primary);
 }
 
+.site-nav a.active {
+  color: var(--accent-teal);
+}
+
 .lang-toggle {
   display: flex;
   align-items: center;

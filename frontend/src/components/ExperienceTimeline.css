@@ -1,11 +1,30 @@
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 56px;
+  align-items: start;
+}
+
+.timeline-heading {
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+}
+
 .timeline {
   list-style: none;
-  margin: 0 0 56px;
+  margin: 0;
   padding: 0 0 0 24px;
   border-left: 0.5px solid var(--border);
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
 }
 
 .timeline-item {
@@ -70,8 +89,4 @@
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 16px;
-}
-
-.education-heading {
-  margin-bottom: 32px;
 }

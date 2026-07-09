@@ -13,11 +13,11 @@ export default function Publications({ publications }: { publications: Publicati
   const { t, ui } = useLanguage();
 
   return (
-    <section id="publications" className="section">
+    <div className="page">
       <div className="container">
         <div className="section-head">
           <div>
-            <span className="eyebrow">03 · {ui.nav.publications}</span>
+            <span className="eyebrow">{ui.nav.publications}</span>
             <h2>{ui.nav.publications}</h2>
           </div>
         </div>
@@ -51,6 +51,6 @@ export default function Publications({ publications }: { publications: Publicati
           })}
         </ul>
       </div>
-    </section>
+    </div>
   );
 }

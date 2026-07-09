@@ -18,7 +18,7 @@ export default function ProjectDetail({ content }: { content: ContentBundle }) {
   return (
     <article className="case-study">
       <div className="container">
-        <Link to="/#projects" className="case-study-back">
+        <Link to="/projetos" className="case-study-back">
           <IconArrowLeft size={16} stroke={1.75} aria-hidden="true" /> {ui.projects.back}
         </Link>
 
