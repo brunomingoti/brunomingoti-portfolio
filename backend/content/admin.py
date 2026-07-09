@@ -8,6 +8,7 @@ from .models import (
     Project,
     ProjectImage,
     Publication,
+    RecommendationLetter,
 )
 
 
@@ -42,9 +43,15 @@ class PublicationAdmin(admin.ModelAdmin):
     list_filter = ("type",)
 
 
+class RecommendationLetterInline(admin.TabularInline):
+    model = RecommendationLetter
+    extra = 1
+
+
 @admin.register(ExperienceEntry)
 class ExperienceEntryAdmin(admin.ModelAdmin):
     list_display = ("organization", "role_pt", "period_start", "period_end", "order")
+    inlines = [RecommendationLetterInline]
 
 
 @admin.register(EducationEntry)

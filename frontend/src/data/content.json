@@ -541,7 +541,7 @@
         "REST APIs",
         "digital signatures"
       ],
-      "recommendationLetterUrl": ""
+      "recommendationLetters": []
     },
     {
       "organization": "Fundação CERTI",
@@ -584,7 +584,7 @@
         "Electron",
         "Modbus"
       ],
-      "recommendationLetterUrl": ""
+      "recommendationLetters": []
     },
     {
       "organization": "Invest Jr.",
@@ -616,7 +616,7 @@
         "Power Query",
         "VBA"
       ],
-      "recommendationLetterUrl": ""
+      "recommendationLetters": []
     }
   ],
   "education": [

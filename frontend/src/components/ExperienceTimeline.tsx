@@ -59,16 +59,25 @@ export default function ExperienceTimeline({
                         ))}
                       </div>
                     )}
-                    {exp.recommendationLetterUrl && (
-                      <button
-                        className="letter-trigger"
-                        onClick={() =>
-                          setOpenLetter({ url: exp.recommendationLetterUrl, title: exp.organization })
-                        }
-                      >
-                        <IconFileCertificate size={15} stroke={1.75} aria-hidden="true" />
-                        {lang === "pt" ? "Carta de recomendação" : "Recommendation letter"}
-                      </button>
+                    {exp.recommendationLetters.length > 0 && (
+                      <div className="letter-triggers">
+                        {exp.recommendationLetters.map((letter, i) => {
+                          const base = lang === "pt" ? "Carta de recomendação" : "Recommendation letter";
+                          const numbered =
+                            exp.recommendationLetters.length > 1 ? `${base} ${i + 1}` : base;
+                          const label = t(letter.label) || numbered;
+                          return (
+                            <button
+                              key={i}
+                              className="letter-trigger"
+                              onClick={() => setOpenLetter({ url: letter.url, title: `${exp.organization} — ${label}` })}
+                            >
+                              <IconFileCertificate size={15} stroke={1.75} aria-hidden="true" />
+                              {label}
+                            </button>
+                          );
+                        })}
+                      </div>
                     )}
                   </div>
                 </li>

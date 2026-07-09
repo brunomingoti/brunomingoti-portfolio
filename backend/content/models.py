@@ -123,11 +123,6 @@ class ExperienceEntry(models.Model):
     highlights_pt = models.JSONField(default=list, help_text="List of bullet strings")
     highlights_en = models.JSONField(default=list)
     tools = models.CharField(max_length=300, blank=True)
-    recommendation_letter = models.FileField(
-        upload_to="recommendations/",
-        blank=True,
-        help_text="PDF or image of the recommendation letter for this role, shown as an inline preview.",
-    )
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
@@ -136,6 +131,26 @@ class ExperienceEntry(models.Model):
 
     def __str__(self):
         return f"{self.organization} ({self.period_start} - {self.period_end})"
+
+
+class RecommendationLetter(models.Model):
+    """A recommendation letter attached to an experience entry. An experience can have several."""
+
+    experience = models.ForeignKey(
+        ExperienceEntry, on_delete=models.CASCADE, related_name="recommendation_letters"
+    )
+    file = models.FileField(upload_to="recommendations/", help_text="PDF or image of the letter.")
+    label_pt = models.CharField(
+        max_length=150, blank=True, help_text="e.g. 'Carta — Fulano de Tal'. Leave blank to auto-number."
+    )
+    label_en = models.CharField(max_length=150, blank=True)
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ["order"]
+
+    def __str__(self):
+        return f"{self.experience.organization} — {self.label_pt or self.file.name}"
 
 
 class EducationEntry(models.Model):
