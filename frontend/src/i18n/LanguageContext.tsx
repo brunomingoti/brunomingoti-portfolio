@@ -48,7 +48,7 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 function detectInitialLang(): Lang {
   const saved = localStorage.getItem("lang");
   if (saved === "pt" || saved === "en") return saved;
-  return navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en";
+  return "en";
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {

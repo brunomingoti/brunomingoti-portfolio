@@ -30,7 +30,7 @@ export default function Header() {
         </nav>
         <button className="lang-toggle" onClick={toggleLang} aria-label="Toggle language">
           <IconLanguage size={16} stroke={1.75} aria-hidden="true" />
-          {lang === "pt" ? "PT" : "EN"}
+          {lang === "pt" ? "EN" : "PT"}
         </button>
       </div>
     </header>
