@@ -1,4 +1,5 @@
 import { IconCode, IconExternalLink, IconFileText, IconSchool } from "@tabler/icons-react";
+import BackHome from "./BackHome";
 import { useLanguage } from "../i18n/LanguageContext";
 import type { PublicationData } from "../types";
 import "./Publications.css";
@@ -15,6 +16,7 @@ export default function Publications({ publications }: { publications: Publicati
   return (
     <div className="page">
       <div className="container">
+        <BackHome />
         <div className="section-head">
           <div>
             <span className="eyebrow">{ui.nav.publications}</span>

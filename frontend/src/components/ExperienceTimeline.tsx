@@ -1,3 +1,4 @@
+import BackHome from "./BackHome";
 import { useLanguage } from "../i18n/LanguageContext";
 import type { EducationData, ExperienceData } from "../types";
 import "./ExperienceTimeline.css";
@@ -14,6 +15,7 @@ export default function ExperienceTimeline({
   return (
     <div className="page">
       <div className="container">
+        <BackHome />
         <div className="section-head">
           <div>
             <span className="eyebrow">{ui.nav.experience}</span>

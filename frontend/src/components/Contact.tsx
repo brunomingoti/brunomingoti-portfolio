@@ -6,6 +6,7 @@ import {
   IconSchool,
   type Icon as TablerIcon,
 } from "@tabler/icons-react";
+import BackHome from "./BackHome";
 import { useLanguage } from "../i18n/LanguageContext";
 import type { ProfileData } from "../types";
 import { withBase } from "../lib/assets";
@@ -24,6 +25,7 @@ export default function Contact({ profile }: { profile: ProfileData }) {
   return (
     <div className="page">
       <div className="container">
+        <BackHome />
         <div className="section-head">
           <div>
             <span className="eyebrow">{ui.nav.contact}</span>

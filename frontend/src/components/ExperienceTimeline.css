@@ -1,6 +1,6 @@
 .experience-grid {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
   gap: 56px;
   align-items: start;
 }
@@ -17,7 +17,7 @@
   border-left: 0.5px solid var(--border);
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
 @media (max-width: 900px) {
@@ -38,11 +38,11 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--accent-teal);
+  background: var(--accent);
 }
 
 .timeline-dot-alt {
-  background: var(--accent-coral);
+  background: var(--accent-warm);
 }
 
 .timeline-top {
@@ -74,14 +74,14 @@
 }
 
 .timeline-highlights {
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   padding-left: 18px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
+  gap: 5px;
+  font-size: 13px;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .timeline-tools {

@@ -12,6 +12,7 @@ interface LanguageContextValue {
 
 const STRINGS = {
   pt: {
+    common: { backHome: "Início" },
     nav: { about: "Sobre", projects: "Projetos", publications: "Publicações", experience: "Experiência", contact: "Contato" },
     hero: { cta: "Ver projetos", contactCta: "Fale comigo" },
     projects: { all: "Todos", featured: "Destaque", viewCase: "Ver estudo de caso", back: "Voltar aos projetos" },
@@ -26,6 +27,7 @@ const STRINGS = {
     },
   },
   en: {
+    common: { backHome: "Home" },
     nav: { about: "About", projects: "Projects", publications: "Publications", experience: "Experience", contact: "Contact" },
     hero: { cta: "View projects", contactCta: "Get in touch" },
     projects: { all: "All", featured: "Featured", viewCase: "View case study", back: "Back to projects" },

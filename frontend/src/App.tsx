@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Header />
-      <main style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+      <main style={{ flex: 1, minHeight: 0, overflowY: "auto" }}>
         <Routes>
           <Route path="/" element={<Home content={typedContent} />} />
           <Route path="/sobre" element={<About profile={typedContent.profile} />} />

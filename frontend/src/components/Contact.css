@@ -23,7 +23,7 @@
 }
 
 .contact-links a:hover {
-  color: var(--accent-teal);
+  color: var(--accent);
 }
 
 .cv-downloads {

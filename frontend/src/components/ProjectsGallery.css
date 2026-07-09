@@ -22,13 +22,13 @@
 }
 
 .filter-chip.active {
-  color: var(--accent-teal);
-  border-color: var(--accent-teal);
-  background: var(--accent-teal-bg);
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
 }

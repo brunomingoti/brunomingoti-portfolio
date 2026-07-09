@@ -1,14 +1,11 @@
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(10, 11, 13, 0.85);
-  backdrop-filter: blur(8px);
+  flex-shrink: 0;
+  background: var(--bg-1);
   border-bottom: 0.5px solid var(--border);
 }
 
 .site-header-inner {
-  height: 64px;
+  height: var(--header-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +22,8 @@
 .brand-mark {
   font-family: var(--mono);
   font-size: 13px;
-  color: var(--accent-teal);
-  border: 0.5px solid var(--accent-teal);
+  color: var(--accent);
+  border: 0.5px solid var(--accent);
   border-radius: 6px;
   padding: 4px 7px;
 }
@@ -51,7 +48,7 @@
 }
 
 .site-nav a.active {
-  color: var(--accent-teal);
+  color: var(--accent);
 }
 
 .lang-toggle {
@@ -70,8 +67,8 @@
 }
 
 .lang-toggle:hover {
-  border-color: var(--accent-teal);
-  color: var(--accent-teal);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 @media (max-width: 860px) {

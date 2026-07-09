@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import BackHome from "./BackHome";
 import { useLanguage } from "../i18n/LanguageContext";
 import type { InstitutionData, ProjectData } from "../types";
 import ProjectCard from "./ProjectCard";
@@ -28,6 +29,7 @@ export default function ProjectsGallery({
   return (
     <div className="page">
       <div className="container">
+        <BackHome />
         <div className="section-head">
           <div>
             <span className="eyebrow">{ui.nav.projects}</span>
