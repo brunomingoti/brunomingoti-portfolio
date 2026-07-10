@@ -116,8 +116,8 @@
         "en": "Generation and validation of Digital Calibration Certificates (DCC) XML, with a REST API and web app."
       },
       "body": {
-        "pt": "Ferramenta que converte dados de calibração em arquivos XML de Certificado Digital de Calibração (DCC) compatíveis com o schema da PTB (Physikalisch-Technische Bundesanstalt), com gestão de conteúdo tanto via API REST quanto interface web.\n\nImplementei as operações de banco de dados para armazenamento e assinatura digital dos conjuntos de medição, também no contexto do projeto AMalytik. Código em TypeScript e Python, licença MIT, arquivado no Zenodo.",
-        "en": "A tool that converts calibration data into standards-compliant Digital Calibration Certificate (DCC) XML files following the PTB (Physikalisch-Technische Bundesanstalt) schema, with content management through both a REST API and a web interface.\n\nI implemented the database operations for storing and digitally signing measurement datasets, also as part of the AMalytik project. Code in TypeScript and Python, MIT license, archived on Zenodo."
+        "pt": "Ferramenta que converte dados de calibração em arquivos XML de Certificado Digital de Calibração (DCC) compatíveis com o schema da PTB (Physikalisch-Technische Bundesanstalt), com gestão de conteúdo tanto via API REST quanto interface web.\r\n\r\nImplementei as operações de banco de dados para armazenamento e assinatura digital dos conjuntos de medição, também no contexto do projeto AMalytik. Código em TypeScript e Python, licença MIT, arquivado no Zenodo.",
+        "en": "A tool that converts calibration data into standards-compliant Digital Calibration Certificate (DCC) XML files following the PTB (Physikalisch-Technische Bundesanstalt) schema, with content management through both a REST API and a web interface.\r\n\r\nI implemented the database operations for storing and digitally signing measurement datasets, also as part of the AMalytik project. Code in TypeScript and Python, MIT license, archived on Zenodo."
       },
       "institution": "wzl",
       "role": {
@@ -136,7 +136,7 @@
       "coverImage": "",
       "repoUrl": "https://zenodo.org/records/18241584",
       "demoUrl": "",
-      "featured": false,
+      "featured": true,
       "images": []
     },
     {
@@ -203,7 +203,7 @@
       "coverImage": "",
       "repoUrl": "",
       "demoUrl": "",
-      "featured": true,
+      "featured": false,
       "images": []
     },
     {
@@ -304,7 +304,7 @@
       "coverImage": "",
       "repoUrl": "",
       "demoUrl": "",
-      "featured": false,
+      "featured": true,
       "images": []
     },
     {
@@ -338,7 +338,7 @@
       "coverImage": "",
       "repoUrl": "",
       "demoUrl": "",
-      "featured": true,
+      "featured": false,
       "images": []
     },
     {
@@ -404,7 +404,7 @@
       "coverImage": "",
       "repoUrl": "",
       "demoUrl": "",
-      "featured": false,
+      "featured": true,
       "images": []
     },
     {
@@ -448,7 +448,7 @@
       "venue": "SIBGRAPI",
       "year": 2025,
       "type": "paper",
-      "url": "https://scholar.google.com.br/citations?user=Dx-d55AAAAAJ&hl=pt-BR",
+      "url": "https://ieeexplore.ieee.org/document/11223341",
       "summary": {
         "pt": "Modelos de detecção de pequenos objetos em imagens de drone para vigilância marítima e apoio a buscas e salvamentos.",
         "en": "Small object detection models over drone imagery for maritime surveillance and search-and-rescue support."
@@ -460,7 +460,7 @@
       "venue": "UFSC / RWTH Aachen — Trabalho de Conclusão de Curso",
       "year": 2025,
       "type": "thesis",
-      "url": "https://scholar.google.com.br/citations?user=Dx-d55AAAAAJ&hl=pt-BR",
+      "url": "https://repositorio.ufsc.br/handle/123456789/267134",
       "summary": {
         "pt": "TCC sobre reconstrução de CT industrial combinando backprojection filtrada com denoising por deep learning.",
         "en": "Bachelor's thesis on industrial CT reconstruction combining filtered backprojection with deep learning-based denoising."
@@ -530,7 +530,7 @@
           "Backend and frontend services for automated data-stream management (device/producer/consumer matching).",
           "Database operations for storing and digitally signing measurement datasets for Digital Calibration Certificates (DCC).",
           "Support for industrial metrology projects: optical measurements, analysis, and reporting.",
-          "Assistance hosting the 3DMC, Europe's leading metrology event."
+          "Assistance hosting the 3DMC, Europe's finest metrology event."
         ]
       },
       "tools": [
@@ -541,7 +541,15 @@
         "REST APIs",
         "digital signatures"
       ],
-      "recommendationLetters": []
+      "recommendationLetters": [
+        {
+          "url": "/media/recommendations/Recommendation_Letter_Bruno.pdf",
+          "label": {
+            "pt": "Carta de recomendação",
+            "en": "Recommendation Letter"
+          }
+        }
+      ]
     },
     {
       "organization": "Fundação CERTI",
@@ -584,7 +592,29 @@
         "Electron",
         "Modbus"
       ],
-      "recommendationLetters": []
+      "recommendationLetters": [
+        {
+          "url": "/media/recommendations/CERTI_recommendation_letter_Alexandre_Marcondes.pdf",
+          "label": {
+            "pt": "Carta de recomendação 1",
+            "en": "Recommendation Letter 1"
+          }
+        },
+        {
+          "url": "/media/recommendations/CERTI_recommendation_letter_Alexandre_Reeberg_de_Mello.pdf",
+          "label": {
+            "pt": "Carta de recomendação 2",
+            "en": "Recommendation Letter 2"
+          }
+        },
+        {
+          "url": "/media/recommendations/WEG_recommendation_letter_Lucas_Tavares.pdf",
+          "label": {
+            "pt": "Carta de recomendação 3",
+            "en": "Recommendation Letter 3"
+          }
+        }
+      ]
     },
     {
       "organization": "Invest Jr.",
