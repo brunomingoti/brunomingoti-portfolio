@@ -66,7 +66,7 @@ export interface ExperienceData {
   context: Bilingual;
   highlights: { pt: string[]; en: string[] };
   tools: string[];
-  recommendationLetterUrl: string;
+  recommendationLetters: { url: string; label: Bilingual }[];
 }
 
 export interface EducationData {

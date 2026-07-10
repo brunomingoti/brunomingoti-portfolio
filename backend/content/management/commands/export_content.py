@@ -107,10 +107,15 @@ class Command(BaseCommand):
                 "context": bilingual(e, "context"),
                 "highlights": {"pt": e.highlights_pt, "en": e.highlights_en},
                 "tools": tool_list(e.tools),
-                "recommendationLetterUrl": e.recommendation_letter.name
-                and f"/media/{e.recommendation_letter.name}",
+                "recommendationLetters": [
+                    {
+                        "url": f"/media/{letter.file.name}",
+                        "label": {"pt": letter.label_pt, "en": letter.label_en},
+                    }
+                    for letter in e.recommendation_letters.all()
+                ],
             }
-            for e in ExperienceEntry.objects.all()
+            for e in ExperienceEntry.objects.prefetch_related("recommendation_letters")
         ]
 
         education = [

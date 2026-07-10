@@ -1,6 +1,7 @@
 import { IconCode, IconExternalLink, IconFileText, IconSchool } from "@tabler/icons-react";
 import BackHome from "./BackHome";
 import { useLanguage } from "../i18n/LanguageContext";
+import { linkLabel } from "../lib/links";
 import type { PublicationData } from "../types";
 import "./Publications.css";
 
@@ -44,7 +45,7 @@ export default function Publications({ publications }: { publications: Publicati
                 {pub.url && (
                   <a className="pub-link" href={pub.url} target="_blank" rel="noreferrer">
                     <IconExternalLink size={14} stroke={1.75} aria-hidden="true" />{" "}
-                    {pub.url.includes("zenodo") ? "Zenodo" : "Google Scholar"}
+                    {linkLabel(pub.url, ui.publications.viewLink)}
                   </a>
                 )}
               </div>

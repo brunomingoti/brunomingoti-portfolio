@@ -20,6 +20,7 @@ const STRINGS = {
       paper: "Artigo",
       thesis: "TCC",
       report: "Relatório / código",
+      viewLink: "Ver publicação",
     },
     contact: {
       downloadPt: "Currículo (PT)",
@@ -35,6 +36,7 @@ const STRINGS = {
       paper: "Paper",
       thesis: "Thesis",
       report: "Report / code",
+      viewLink: "View publication",
     },
     contact: {
       downloadPt: "Currículo (PT)",
@@ -48,7 +50,7 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 function detectInitialLang(): Lang {
   const saved = localStorage.getItem("lang");
   if (saved === "pt" || saved === "en") return saved;
-  return navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en";
+  return "en";
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
