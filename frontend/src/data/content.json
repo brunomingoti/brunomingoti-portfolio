@@ -48,8 +48,8 @@
         "en": "Bachelor's thesis: filtered backprojection + deep learning sinogram denoising, with GPU-accelerated pipelines."
       },
       "body": {
-        "pt": "Trabalho de Conclusão de Curso desenvolvido na Werkzeugmaschinenlabor WZL da RWTH Aachen, propondo combinar a reconstrução clássica por backprojection filtrada com um estágio de denoising de sinogramas baseado em deep learning, visando melhorar a qualidade de reconstrução de tomografia computadorizada industrial sem custo proibitivo de tempo.\n\nImplementei duas pipelines de reconstrução aceleradas por GPU e as comparei, em benchmark sistemático de qualidade e desempenho, contra o software de referência utilizado no instituto — obtendo ganhos tanto em fidelidade da imagem reconstruída quanto em tempo de processamento.",
-        "en": "Bachelor's thesis developed at the Werkzeugmaschinenlabor WZL, RWTH Aachen, proposing to combine classical filtered backprojection reconstruction with a deep learning-based sinogram denoising stage, aiming to improve industrial CT reconstruction quality without a prohibitive time cost.\n\nI implemented two GPU-accelerated reconstruction pipelines and benchmarked them systematically for quality and performance against the institute's reference software — achieving gains in both reconstructed image fidelity and processing time."
+        "pt": "Trabalho de Conclusão de Curso desenvolvido na Werkzeugmaschinenlabor WZL da RWTH Aachen, intitualdo \"Filtered Backprojection Combined with Deep Learning-based Sinogram Denoising for Improved Industrial CT Reconstruction\", propondo combinar a reconstrução clássica por backprojection filtrada com um estágio de denoising de sinogramas baseado em deep learning, visando melhorar a qualidade de reconstrução de tomografia computadorizada industrial.\r\n\r\nImplementei duas pipelines de reconstrução aceleradas por GPU e as comparei, em benchmark sistemático de qualidade e desempenho, contra o software de referência utilizado no instituto, obtendo ganhos tanto em fidelidade da imagem reconstruída quanto em tempo de processamento.",
+        "en": "Bachelor's thesis developed at the Werkzeugmaschinenlabor WZL, RWTH Aachen, titled \"Filtered Backprojection Combined with Deep Learning-based Sinogram Denoising for Improved Industrial CT Reconstruction\", proposing to combine classical filtered backprojection reconstruction with a deep learning-based sinogram denoising stage, aiming to improve industrial CT reconstruction quality.\r\n\r\nI implemented two GPU-accelerated reconstruction pipelines and benchmarked them systematically for quality and performance against the institute's reference software, achieving gains in both reconstructed image fidelity and processing time."
       },
       "institution": "wzl",
       "role": {
@@ -66,7 +66,7 @@
         "deep learning"
       ],
       "icon": "ti-scan",
-      "coverImage": "",
+      "coverImage": "/media/projects/Werth_Tomoscope.png",
       "repoUrl": "",
       "demoUrl": "",
       "featured": true,
@@ -83,8 +83,8 @@
         "en": "Backend/frontend services for automated device/producer/consumer data matching."
       },
       "body": {
-        "pt": "Software-stack desenvolvido no âmbito do projeto de pesquisa AMalytik (financiado pelo Ministério Federal alemão de Assuntos Econômicos e Ação Climática), atuando como camada intermediária dentro de um ecossistema SOIL, conectando dispositivos sensores (fontes de dados) a aplicações consumidoras.\n\nDesenvolvi tanto os serviços de backend quanto o frontend para o gerenciamento automatizado desses fluxos de dados, incluindo o matching entre dispositivos, produtores e consumidores. Código em Python e TypeScript, publicado com licença MIT e arquivado no Zenodo.",
-        "en": "Software stack built as part of the AMalytik research project (funded by the German Federal Ministry for Economic Affairs and Climate Action), acting as an intermediary layer within a SOIL ecosystem, connecting sensor devices (data sources) to consumer applications.\n\nI built both the backend services and the frontend for automated management of these data flows, including device/producer/consumer matching. Code in Python and TypeScript, released under the MIT license and archived on Zenodo."
+        "pt": "Software-stack desenvolvido no âmbito do projeto de pesquisa AMalytik (financiado pelo Ministério Federal alemão de Assuntos Econômicos e Ação Climática), atuando como camada intermediária dentro de um ecossistema SOIL, conectando dispositivos sensores (fontes de dados) a aplicações consumidoras.\r\n\r\nDesenvolvi tanto os serviços de backend quanto o frontend para o gerenciamento automatizado desses fluxos de dados, incluindo o matching entre dispositivos, produtores e consumidores. Código em Python e TypeScript, publicado com licença MIT e arquivado no Zenodo.",
+        "en": "Software stack built as part of the AMalytik research project (funded by the German Federal Ministry for Economic Affairs and Climate Action), acting as an intermediary layer within a SOIL ecosystem, connecting sensor devices (data sources) to consumer applications.\r\n\r\nI built both the backend services and the frontend for automated management of these data flows, including device/producer/consumer matching. Code in Python and TypeScript, released under the MIT license and archived on Zenodo."
       },
       "institution": "wzl",
       "role": {
@@ -99,7 +99,7 @@
         "REST APIs"
       ],
       "icon": "ti-topology-star-3",
-      "coverImage": "",
+      "coverImage": "/media/projects/Captura_de_tela_2026-07-10_114129.png",
       "repoUrl": "https://zenodo.org/records/18255616",
       "demoUrl": "",
       "featured": true,
@@ -133,11 +133,26 @@
         "REST APIs"
       ],
       "icon": "ti-certificate",
-      "coverImage": "",
+      "coverImage": "/media/projects/Captura_de_tela_2026-07-10_114742.png",
       "repoUrl": "https://zenodo.org/records/18241584",
       "demoUrl": "",
       "featured": true,
-      "images": []
+      "images": [
+        {
+          "src": "/media/projects/gallery/Captura_de_tela_2026-07-10_114742.png",
+          "caption": {
+            "pt": "Screenshot 1",
+            "en": "Screenshot 1"
+          }
+        },
+        {
+          "src": "/media/projects/gallery/Captura_de_tela_2026-07-10_114808.png",
+          "caption": {
+            "pt": "Screenshot 2",
+            "en": "Screenshot 2"
+          }
+        }
+      ]
     },
     {
       "slug": "maritime-search-rescue-detection",
